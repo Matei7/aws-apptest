@@ -13,7 +13,7 @@ phases:
   build:
     commands:
       - echo Build Phase
-      - vue-cli-service build
+      - npm run build
   post_build:
     commands:
       - echo PostBuild Phase

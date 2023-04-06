@@ -17,4 +17,5 @@ phases:
   post_build:
     commands:
       - echo PostBuild Phase
-      - aws s3 sync ./dist $S3_BUCKET
+      - aws s3 sync ./dist s3://apptest.click --delete
+      - aws cloudfront create-invalidation --distribution-id E2U3L1PQWKMQ7E --paths "/index.html" "/css/*" "/js/*"

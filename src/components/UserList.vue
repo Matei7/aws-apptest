@@ -7,7 +7,7 @@
       </li>
     </ul>
 
-    <button @click="fetchUsers">Fetch Users</button>
+    <button @click="fetchUsers" class="btn btn-warning">Fetch Users</button>
   </div>
 </template>
 

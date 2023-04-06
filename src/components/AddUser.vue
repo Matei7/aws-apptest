@@ -53,9 +53,10 @@ export default {
         .then((response) => {
           if ( response.status === 200 ) {
             this.showSubmitFeedback = true;
-            // setTimeout(() => {
-            //   this.showSubmitFeedback = false;
-            // }, 2000);
+            setTimeout(() => {
+              this.showSubmitFeedback = false;
+              this.form.userName = '';
+            }, 2000);
           }
         });
     },
